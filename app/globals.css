@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #070a0d;
+  --color-panel: #0f1419;
+  --color-panel-strong: #121920;
+  --color-border: rgba(214, 223, 234, 0.14);
+  --color-border-strong: rgba(214, 223, 234, 0.3);
+  --color-text: #f2f6fb;
+  --color-text-strong: #dde8f3;
+  --color-text-muted: #b3c0cf;
+  --color-accent: #88d3c6;
+  --color-accent-soft: rgba(136, 211, 198, 0.1);
+  --font-sans: var(--font-heading), sans-serif;
+  --font-mono: var(--font-mono), monospace;
+}
+
+:root {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(180deg, #070a0d 0%, #0a0f13 36%, #070a0d 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent 18rem);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(123, 209, 195, 0.28);
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-panel);
+  padding: 0.75rem 1rem;
+  color: var(--color-text);
+  transition: top 160ms ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.site-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.site-shell > header,
+.site-shell > main,
+.site-shell > footer {
+  position: relative;
+  z-index: 1;
+}
+
+.page-atmosphere {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-image:
+    linear-gradient(180deg, rgba(7, 10, 13, 0.18) 0%, rgba(7, 10, 13, 0.48) 10%, rgba(7, 10, 13, 0.72) 30%, rgba(7, 10, 13, 0.8) 100%),
+    var(--page-bg-image);
+  background-position:
+    center top,
+    left top;
+  background-repeat:
+    no-repeat,
+    repeat-y;
+  background-size:
+    100% 100%,
+    min(112rem, 120vw) auto;
+  opacity: 0.22;
+  animation: background-pan-secondary 44s ease-in-out infinite alternate;
+}
+
+.section-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(214, 223, 234, 0.1) 14%, rgba(214, 223, 234, 0.2) 50%, rgba(214, 223, 234, 0.1) 86%, transparent 100%);
+}
+
+.surface {
+  border: 1px solid var(--color-border);
+  background: rgba(15, 20, 25, 0.72);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.45rem);
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.section-copy {
+  max-width: 56rem;
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  line-height: 1.85;
+}
+
+.anchor-link {
+  position: relative;
+  color: var(--color-text-muted);
+  transition: color 180ms ease;
+}
+
+.anchor-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  height: 1px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: rgba(123, 209, 195, 0.8);
+  transition: transform 180ms ease;
+}
+
+.anchor-link:hover,
+.anchor-link:focus-visible {
+  color: var(--color-text);
+}
+
+.anchor-link:hover::after,
+.anchor-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.fade-up {
+  animation: fade-up 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-background-image {
+  animation: background-pan-primary 26s ease-in-out infinite alternate;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes background-pan-primary {
+  from {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.1) translate3d(-1.5%, -1%, 0);
+  }
+}
+
+@keyframes background-pan-secondary {
+  from {
+    background-position:
+      center top,
+      left top;
+  }
+  to {
+    background-position:
+      center top,
+      left -2rem top 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  .fade-up {
+    animation: none;
+  }
+
+  .hero-background-image,
+  .page-atmosphere {
+    animation: none;
+  }
+
+  .anchor-link,
+  .anchor-link::after {
+    transition: none;
+  }
+}

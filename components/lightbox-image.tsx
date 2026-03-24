@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 type LightboxImageProps = {
   src: string;
@@ -21,6 +22,11 @@ export function LightboxImage({
   imageClassName,
 }: LightboxImageProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
     if (!isOpen) {
@@ -53,32 +59,47 @@ export function LightboxImage({
         </span>
       </button>
 
-      {isOpen ? (
-        <div
-          className="fixed inset-0 z-[80] flex items-center justify-center bg-[rgba(5,7,10,0.92)] px-4 py-6 sm:px-8"
-          role="dialog"
-          aria-modal="true"
-          aria-label={alt}
-          onClick={() => setIsOpen(false)}
-        >
-          <button
-            type="button"
-            onClick={() => setIsOpen(false)}
-            className="absolute right-4 top-4 border border-white/15 bg-[rgba(7,10,13,0.76)] px-3 py-2 text-sm font-semibold text-white transition hover:border-white/30"
-          >
-            Close
-          </button>
-          <div className="max-h-full max-w-[min(92vw,120rem)]" onClick={(event) => event.stopPropagation()}>
-            <Image
-              src={src}
-              alt={alt}
-              width={width}
-              height={height}
-              className="max-h-[88vh] w-auto max-w-full border border-white/10 bg-black object-contain shadow-[0_28px_80px_rgba(0,0,0,0.5)]"
-            />
-          </div>
-        </div>
-      ) : null}
+      {isOpen && isMounted
+        ? createPortal(
+            <div
+              className="fixed inset-0 z-[80] flex items-center justify-center bg-[rgba(5,7,10,0.94)] px-4 py-6 sm:px-8"
+              role="dialog"
+              aria-modal="true"
+              aria-label={alt}
+              onClick={() => setIsOpen(false)}
+            >
+              <div
+                className="relative flex max-h-[90vh] w-full max-w-[min(94vw,120rem)] flex-col overflow-auto rounded-[0.4rem] border border-white/10 bg-[rgba(8,11,15,0.82)] p-3 shadow-[0_28px_80px_rgba(0,0,0,0.56)] sm:p-4"
+                onClick={(event) => event.stopPropagation()}
+              >
+                <div className="mb-3 flex items-center justify-between gap-4 border-b border-white/10 pb-3">
+                  <p className="min-w-0 text-sm leading-6 text-[color:var(--color-text-muted)]">{alt}</p>
+                  <button
+                    type="button"
+                    onClick={() => setIsOpen(false)}
+                    className="shrink-0 border border-white/15 bg-[rgba(12,16,20,0.9)] px-3 py-2 text-sm font-semibold text-white transition hover:border-white/35 hover:bg-[rgba(16,21,26,0.96)]"
+                    aria-label="Close image preview"
+                  >
+                    Close
+                  </button>
+                </div>
+                <div className="flex min-h-0 flex-1 items-center justify-center">
+                  <Image
+                    src={src}
+                    alt={alt}
+                    width={width}
+                    height={height}
+                    className="max-h-[78vh] w-auto max-w-full bg-black object-contain"
+                  />
+                </div>
+                <p className="mt-3 text-xs leading-6 text-[color:var(--color-text-muted)]">
+                  Press <span className="font-mono text-white">Esc</span> or click outside the frame to close.
+                </p>
+              </div>
+            </div>,
+            document.body,
+          )
+        : null}
     </>
   );
 }

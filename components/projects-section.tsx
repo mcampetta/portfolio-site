@@ -32,7 +32,7 @@ export function ProjectsSection({ items, githubCta }: ProjectsSectionProps) {
       copy="A guided view of the main software projects, with one focused panel instead of multiple wide rows."
       compactTop
     >
-      <div className="max-w-7xl border-t border-white/10 pt-8">
+      <div className="border-t border-white/10 pt-8">
         <div className="flex flex-wrap gap-3">
           {items.map((item) => {
             const isActive = item.slug === activeProject.slug;

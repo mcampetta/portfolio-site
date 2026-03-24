@@ -15,7 +15,7 @@ export function RecoveryPracticeSection({ items }: RecoveryPracticeSectionProps)
       copy="These videos are included as supporting proof of work. They show real recovery conditions, environments, and the practical constraints involved in difficult cases."
       compactTop
     >
-      <div className="max-w-7xl space-y-14">
+      <div className="space-y-14">
         {items.map((item) => (
           <article
             key={item.embedId}

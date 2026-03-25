@@ -52,10 +52,16 @@ export function LightboxImage({
 
   return (
     <>
-      <button type="button" onClick={() => setIsOpen(true)} className={`group relative block text-left ${frameClassName}`}>
+      <button
+        type="button"
+        onClick={() => setIsOpen(true)}
+        aria-label={`Expand image: ${alt}`}
+        className={`group relative block cursor-zoom-in text-left ${frameClassName}`}
+      >
         <Image src={src} alt={alt} width={width} height={height} className={imageClassName} />
-        <span className="pointer-events-none absolute right-3 top-3 border border-white/15 bg-[rgba(7,10,13,0.7)] px-2 py-1 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-white/85 transition group-hover:border-white/30 group-hover:text-white">
-          Expand
+        <span className="pointer-events-none absolute inset-0 border border-white/0 bg-[rgba(7,10,13,0.02)] transition group-hover:border-white/20 group-hover:bg-[rgba(7,10,13,0.18)] group-focus-visible:border-white/25 group-focus-visible:bg-[rgba(7,10,13,0.2)]" />
+        <span className="pointer-events-none absolute bottom-3 left-3 border border-white/15 bg-[rgba(7,10,13,0.74)] px-3 py-2 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-white/85 transition group-hover:border-white/30 group-hover:text-white group-focus-visible:border-white/30 group-focus-visible:text-white">
+          Click to expand
         </span>
       </button>
 

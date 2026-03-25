@@ -85,7 +85,7 @@ export const siteContent = {
       company: "Ontrack",
       period: "Current",
       description:
-        "Work in an advanced data recovery environment supporting hard drives, flash media, smartphones, tablets, and embedded systems. The role combines recovery engineering, Apple device research, internal software development, and process design for technically difficult cases.",
+        "Works within an R&D business unit alongside one of the most technologically advanced data recovery rooms in the industry. Recovery work spans hard drives, flash memory, smartphones, tablets, and embedded systems, including devices affected by fire, flood, drops, explosions, and deliberate damage. The role centers on building bespoke solutions to difficult technical problems that other engineers and technicians can apply and repeat in production work.",
       detailPoints: [
         "Develop recovery procedures and tooling for Apple-focused workflows shaped by corruption, extraction challenges, and device-specific behavior.",
         "Build and refine internal software used for analysis, automation, cleanroom evaluation, intake capture, and operational support inside the lab.",

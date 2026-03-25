@@ -102,8 +102,7 @@ export const siteContent = {
       caseStudy:
         "Built around real recovery and transfer work rather than generic backup browsing.",
       tags: ["C#", "iOS Backups", "Data Recovery", "Desktop UI"],
-      github: { label: "GitHub", href: "https://github.com/your-handle/ios-backup-manager" },
-      demo: { label: "Project Page", href: "https://example.com/ios-backup-manager" },
+      github: { label: "GitHub", href: "https://github.com/mcampetta/iOSBackupManager" },
       images: [
         {
           src: withBasePath("/portfolio-assets/projects/ios-backup-manager/backup-ui.png"),
@@ -173,7 +172,7 @@ export const siteContent = {
         "Minimal, operator-focused UI that keeps state, inputs, and output visible without noise.",
       tags: ["Desktop UI", "C#", "Encryption Tooling", "Operator Workflow"],
       github: { label: "GitHub", href: "https://github.com/mcampetta/ObsidianQ" },
-      demo: { label: "Project Page", href: "https://example.com/obsidianq" },
+      demo: { label: "Project Page", href: "https://mcampetta.github.io/ObsidianQ/" },
       images: [
         {
           src: withBasePath("/portfolio-assets/projects/obsidianq/terminal-ui.png"),
@@ -196,7 +195,7 @@ export const siteContent = {
         "Focused on queue visibility, useful settings, and reliable operation at scale.",
       tags: ["Image Processing", "Desktop Utility", "Workflow Design"],
       github: { label: "GitHub", href: "https://github.com/mcampetta/HEICtoJPG" },
-      demo: { label: "Project Page", href: "https://example.com/heic-converter" },
+      demo: { label: "Project Page", href: "https://mcampetta.github.io/HEICtoJPG/" },
       images: [
         {
           src: withBasePath("/portfolio-assets/projects/heic-converter/main-ui.jpg"),

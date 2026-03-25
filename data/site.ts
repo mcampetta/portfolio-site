@@ -292,18 +292,18 @@ export const siteContent = {
   ] as readonly LabWorkItem[],
   recoveryPracticeVideos: [
     {
-      title: "Extreme Physical Damage Recovery",
-      description:
-        "A recovery case demonstrating data extraction work on mobile devices after severe physical damage. Included to show real-world recovery conditions, device-level failure scenarios, and the practical constraints involved in difficult extraction work.",
-      youtubeUrl: "https://www.youtube.com/watch?v=Nz4p490Nm_E",
-      embedId: "Nz4p490Nm_E",
-    },
-    {
       title: "Inside the Lab and Cleanroom",
       description:
         "A look inside the lab and cleanroom, featuring hands-on recovery work and interview footage with data recovery engineers and client-facing staff, with yours truly making an appearance as part of the team. Included here as a grounded view of the people, environment, and day-to-day work behind professional recovery operations.",
       youtubeUrl: "https://www.youtube.com/watch?v=j01yFpDAQk8",
       embedId: "j01yFpDAQk8",
+    },
+    {
+      title: "Extreme Physical Damage Recovery",
+      description:
+        "A recovery case demonstrating data extraction work on mobile devices after severe physical damage. Included to show real-world recovery conditions, device-level failure scenarios, and the practical constraints involved in difficult extraction work.",
+      youtubeUrl: "https://www.youtube.com/watch?v=Nz4p490Nm_E",
+      embedId: "Nz4p490Nm_E",
     },
   ] as readonly VideoFeature[],
   engineeringGuide: {

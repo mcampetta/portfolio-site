@@ -52,7 +52,7 @@ export const siteContent = {
   headline: "Data Recovery Engineer | Software Engineer | R&D Solutions Architect",
   heroLabel: "Portfolio",
   intro:
-    "Im an engineer focused on solving difficult data recovery problems across both hardware and software. My work spans board-level diagnostics, Apple device workflows, and internal tooling built to make complex recovery processes more reliable and repeatable.",
+    "I'm an engineer at Ontrack Data Recovery focused on solving problems across both hardware and software. My work spans board-level diagnostics, embedded device research, technician training and internal tooling built to enable data recovery in our labs across the globe.",
   navigation: [
     { label: "Lab Work", href: "#lab-work" },
     { label: "Recovery Work", href: "#recovery-practice" },

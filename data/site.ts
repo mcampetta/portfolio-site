@@ -164,6 +164,28 @@ export const siteContent = {
       ],
     },
     {
+      slug: "t8012-dts",
+      name: "T8012 DTS",
+      summary:
+        "A utility for mounting the internal storage of T2-based Macs as a readable volume when the source machine is no longer operational.",
+      caseStudy:
+        "Built to support recovery and transfer workflows on machines affected by graphics or processor faults, where the data path remains viable.",
+      tags: ["Mac Recovery", "T2", "Data Transfer", "Diagnostics"],
+      github: { label: "GitHub", href: "https://github.com/mcampetta/t8012-DTS" },
+      images: [
+        {
+          src: withBasePath("/portfolio-assets/projects/t8012-dts/t8012.png"),
+          alt: "T8012 DTS interface showing internal storage mounted from a T2-based Mac",
+        },
+      ],
+      detailTitle: "Transfer-oriented tooling for T2-based Mac recovery scenarios",
+      detailPoints: [
+        "Designed to expose internal storage as a mounted volume when a T2-capable Mac could not be used normally.",
+        "Useful in cases where the host machine is impaired by graphics or processor faults but storage access remains electrically viable.",
+        "Gives a standard user a practical way to perform a transfer-style diagnostic workflow similar to what is used before board-level repair attempts.",
+      ],
+    },
+    {
       slug: "obsidianq",
       name: "ObsidianQ",
       summary:

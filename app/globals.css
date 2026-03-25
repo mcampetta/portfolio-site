@@ -97,6 +97,8 @@ a {
     min(112rem, 120vw) auto;
   opacity: 0.22;
   animation: background-pan-secondary 44s ease-in-out infinite alternate;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, transparent 34rem, rgba(0, 0, 0, 0.24) 42rem, rgba(0, 0, 0, 0.88) 50rem, black 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, transparent 34rem, rgba(0, 0, 0, 0.24) 42rem, rgba(0, 0, 0, 0.88) 50rem, black 100%);
 }
 
 .section-divider {

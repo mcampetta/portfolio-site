@@ -67,6 +67,7 @@ export const siteContent = {
     "Applied recovery engineering, internal software, and board-level diagnostics shaped by real failure analysis and production lab work.",
   ],
   heroBackgroundImage: withBasePath("/portfolio-assets/background/hero-background.png"),
+  heroBackgroundVideo: withBasePath("/portfolio-assets/background/hero-background.mp4"),
   pageBackgroundImage: withBasePath("/portfolio-assets/background/hero-background2.png"),
   about: {
     title: "Applied engineering across hardware, software, and recovery operations",

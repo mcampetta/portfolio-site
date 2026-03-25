@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { siteContent } from "@/data/site";
 
 type HeroSectionProps = {
@@ -9,14 +8,18 @@ export function HeroSection({ content }: HeroSectionProps) {
   return (
     <section id="hero" className="scroll-mt-24 relative min-h-[clamp(38rem,46vw,50rem)] overflow-hidden px-5 pb-12 pt-20 sm:px-6 sm:pb-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div className="absolute inset-0">
-        <Image
-          src={content.heroBackgroundImage}
-          alt=""
-          fill
-          priority
+        <video
+          className="hero-background-image h-full w-full object-cover object-right opacity-58"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster={content.heroBackgroundImage}
           aria-hidden="true"
-          className="hero-background-image object-cover object-right opacity-58"
-        />
+        >
+          <source src={content.heroBackgroundVideo} type="video/mp4" />
+        </video>
       </div>
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,10,13,0.66)_0%,rgba(7,10,13,0.3)_38%,rgba(7,10,13,0.04)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,10,13,0.01)_0%,rgba(7,10,13,0.18)_52%,rgba(7,10,13,0.44)_74%,rgba(7,10,13,0.72)_88%,rgba(7,10,13,0.9)_100%)]" />

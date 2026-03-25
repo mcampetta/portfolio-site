@@ -356,8 +356,8 @@ export const siteContent = {
       copy: "Investigation of difficult hardware cases where recovery strategy depends on understanding failure mode, signal path, and access method.",
     },
     {
-      title: "JavaScript and Web Tooling",
-      copy: "Used when a lightweight, maintainable interface improves access to technical workflows or structured information.",
+      title: "Micro-Soldering and BGA Rework",
+      copy: "Hands-on repair work involving damaged SMD and BGA components on logic boards, including micro-soldering and board-level rework that supports diagnostics, device recovery, and restoration of viable data paths.",
     },
     {
       title: "Process Improvement and R&D",

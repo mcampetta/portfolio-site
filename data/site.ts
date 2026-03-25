@@ -58,9 +58,9 @@ export const siteContent = {
     { label: "Recovery Work", href: "#recovery-practice" },
     { label: "Guides", href: "#engineering-guides" },
     { label: "Experience", href: "#experience" },
+    { label: "Projects", href: "#projects" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Focus", href: "#focus" },
-    { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
   ],
   heroHighlights: [

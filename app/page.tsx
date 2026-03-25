@@ -17,9 +17,9 @@ export default function Home() {
       <RecoveryPracticeSection items={siteContent.recoveryPracticeVideos} />
       <EngineeringGuidesSection item={siteContent.engineeringGuide} />
       <ExperienceSection items={siteContent.experience} />
+      <ProjectsSection items={siteContent.projects} githubCta={siteContent.githubCta} />
       <TestimonialsSection items={siteContent.testimonials} />
       <FocusSection items={siteContent.skills} />
-      <ProjectsSection items={siteContent.projects} githubCta={siteContent.githubCta} />
       <ContactSection contact={siteContent.contact} />
     </>
   );

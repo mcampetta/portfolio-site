@@ -389,7 +389,7 @@ export const siteContent = {
     },
     resumeHref: withBasePath("/resume.doc"),
   },
-  footerText: "Martin Campetta portfolio. Static, image-led, and designed to be edited from a single content file.",
+  footerText: "Martin Campetta. Data recovery, R&D, and software engineering portfolio.",
 } as const;
 
 export function getProjectBySlug(slug: string) {

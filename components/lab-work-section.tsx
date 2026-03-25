@@ -7,6 +7,9 @@ type LabWorkSectionProps = {
 };
 
 export function LabWorkSection({ items }: LabWorkSectionProps) {
+  const hasTwoColumnOrphan = items.length % 2 === 1;
+  const hasThreeColumnSingleOrphan = items.length % 3 === 1;
+
   return (
     <SectionShell
       id="lab-work"
@@ -15,8 +18,16 @@ export function LabWorkSection({ items }: LabWorkSectionProps) {
       compactTop
     >
       <div className="grid gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3 xl:gap-x-10 xl:gap-y-14">
-        {items.map((item) => (
-          <article key={item.title} className="border-t border-white/10 pt-8">
+        {items.map((item, index) => {
+          const isLastItem = index === items.length - 1;
+          const twoColumnOrphanClass = hasTwoColumnOrphan && isLastItem ? "md:col-span-2" : "";
+          const threeColumnOrphanClass = hasThreeColumnSingleOrphan && isLastItem ? "xl:col-span-3" : "";
+
+          return (
+          <article
+            key={item.title}
+            className={`border-t border-white/10 pt-8 ${twoColumnOrphanClass} ${threeColumnOrphanClass}`.trim()}
+          >
             <LightboxImage
               src={item.image}
               alt={item.imageAlt}
@@ -30,7 +41,8 @@ export function LabWorkSection({ items }: LabWorkSectionProps) {
               <p className="mt-2 text-[1rem] leading-8 text-[color:var(--color-text-muted)]">{item.description}</p>
             </div>
           </article>
-        ))}
+          );
+        })}
       </div>
     </SectionShell>
   );

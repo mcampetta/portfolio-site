@@ -67,11 +67,14 @@ a {
   isolation: isolate;
 }
 
-.site-shell > header,
 .site-shell > main,
 .site-shell > footer {
   position: relative;
   z-index: 1;
+}
+
+.site-shell > header {
+  z-index: 2;
 }
 
 .page-atmosphere {

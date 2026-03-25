@@ -12,7 +12,6 @@ export function TestimonialsSection({ items }: TestimonialsSectionProps) {
       id="testimonials"
       eyebrow="Testimonials"
       title="Professional endorsements"
-      copy="A short set of references from people who worked closely with me in technical environments."
       compactTop
     >
       <div className="max-w-7xl grid gap-8 border-t border-white/10 pt-8 lg:grid-cols-2 lg:gap-10">

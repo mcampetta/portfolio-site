@@ -48,19 +48,19 @@ export type Testimonial = {
 
 export const siteContent = {
   name: "Martin Campetta",
-  siteUrl: "https://mcampetta.github.io/portfolio-site",
+  siteUrl: "https://campetta.com",
   headline: "Data Recovery Engineer | Software Engineer | R&D Solutions Architect",
   heroLabel: "Portfolio",
   intro:
     "Im an engineer focused on solving difficult data recovery problems across both hardware and software. My work spans board-level diagnostics, Apple device workflows, and internal tooling built to make complex recovery processes more reliable and repeatable.",
   navigation: [
     { label: "Lab Work", href: "#lab-work" },
-    { label: "Projects", href: "#projects" },
     { label: "Recovery Work", href: "#recovery-practice" },
     { label: "Guides", href: "#engineering-guides" },
     { label: "Experience", href: "#experience" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Focus", href: "#focus" },
+    { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
   ],
   heroHighlights: [
@@ -305,8 +305,7 @@ export const siteContent = {
   ] as readonly Testimonial[],
   githubCta: {
     title: "More on GitHub",
-    copy:
-      "Featured projects here are deliberately selective. Additional repositories, experiments, and older work live on GitHub without turning the portfolio itself into a repo directory.",
+    copy: "Additional public projects and utilities are available on GitHub.",
     href: "https://github.com/mcampetta?tab=repositories",
     label: "View More Repositories",
   },

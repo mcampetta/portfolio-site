@@ -15,7 +15,6 @@ export function FocusSection({ items }: FocusSectionProps) {
       id="focus"
       eyebrow="Technical Focus"
       title="Technical focus"
-      copy="The emphasis is practical scope: where software, hardware, recovery, and R&D work intersect."
     >
       <div className="max-w-7xl grid border-t border-white/10 sm:grid-cols-2 lg:grid-cols-4 sm:gap-x-12">
         {items.map((item) => (

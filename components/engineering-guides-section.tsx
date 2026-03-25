@@ -14,7 +14,6 @@ export function EngineeringGuidesSection({ item }: EngineeringGuideSectionProps)
       id="engineering-guides"
       eyebrow="Engineering Notes & Guides"
       title="Practical troubleshooting guidance"
-      copy="A smaller supporting section for technical explanation and process communication."
       compactTop
     >
       <div className="max-w-6xl border-t border-white/10 pt-10">

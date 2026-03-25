@@ -12,7 +12,6 @@ export function RecoveryPracticeSection({ items }: RecoveryPracticeSectionProps)
       id="recovery-practice"
       eyebrow="Selected Recovery Work in Practice"
       title="Recovery work shown in context"
-      copy="These videos are included as supporting proof of work. They show real recovery conditions, environments, and the practical constraints involved in difficult cases."
       compactTop
     >
       <div className="space-y-14">

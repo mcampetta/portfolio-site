@@ -29,7 +29,6 @@ export function ProjectsSection({ items, githubCta }: ProjectsSectionProps) {
       id="projects"
       eyebrow="Selected Projects"
       title="Featured software work"
-      copy="A guided view of the main software projects, with one focused panel instead of multiple wide rows."
       compactTop
     >
       <div className="border-t border-white/10 pt-8">

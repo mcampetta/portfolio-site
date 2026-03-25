@@ -12,7 +12,6 @@ export function LabWorkSection({ items }: LabWorkSectionProps) {
       id="lab-work"
       eyebrow="Lab / Recovery Highlights"
       title="Bench-level work behind the software"
-      copy="Only the strongest examples are shown here. The goal is to establish the hardware investigation and recovery context that informs the software and R&D work elsewhere on the site."
       compactTop
     >
       <div className="grid gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-3 xl:gap-x-10 xl:gap-y-14">

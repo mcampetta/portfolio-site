@@ -14,12 +14,12 @@ export default function Home() {
     <>
       <HeroSection content={siteContent} />
       <LabWorkSection items={siteContent.labWork} />
-      <ProjectsSection items={siteContent.projects} githubCta={siteContent.githubCta} />
       <RecoveryPracticeSection items={siteContent.recoveryPracticeVideos} />
       <EngineeringGuidesSection item={siteContent.engineeringGuide} />
       <ExperienceSection items={siteContent.experience} />
       <TestimonialsSection items={siteContent.testimonials} />
       <FocusSection items={siteContent.skills} />
+      <ProjectsSection items={siteContent.projects} githubCta={siteContent.githubCta} />
       <ContactSection contact={siteContent.contact} />
     </>
   );

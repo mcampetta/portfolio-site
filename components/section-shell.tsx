@@ -12,7 +12,7 @@ export function SectionShell({ id, eyebrow, title, copy, compactTop = false, chi
     <section
       id={id}
       aria-labelledby={`${id}-title`}
-      className={`px-5 pb-10 sm:px-6 sm:pb-14 lg:px-8 ${compactTop ? "pt-2 sm:pt-4" : "pt-10 sm:pt-14"}`}
+      className={`scroll-mt-24 px-5 pb-10 sm:px-6 sm:pb-14 lg:px-8 ${compactTop ? "pt-2 sm:pt-4" : "pt-10 sm:pt-14"}`}
     >
       <div className="mx-auto max-w-[104rem]">
         <div className="section-divider mb-5 sm:mb-7" />

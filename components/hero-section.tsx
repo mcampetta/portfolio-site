@@ -7,7 +7,7 @@ type HeroSectionProps = {
 
 export function HeroSection({ content }: HeroSectionProps) {
   return (
-    <section id="hero" className="relative min-h-[clamp(38rem,46vw,50rem)] overflow-hidden px-5 pb-12 pt-20 sm:px-6 sm:pb-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <section id="hero" className="scroll-mt-24 relative min-h-[clamp(38rem,46vw,50rem)] overflow-hidden px-5 pb-12 pt-20 sm:px-6 sm:pb-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div className="absolute inset-0">
         <Image
           src={content.heroBackgroundImage}

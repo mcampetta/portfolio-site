@@ -301,7 +301,7 @@ export const siteContent = {
     {
       title: "Inside the Lab and Cleanroom",
       description:
-        "Background footage and interview material showing hands-on work in technical lab, cleanroom, and development environments. This supports the portfolio's focus on practical engineering across hardware, software, and recovery workflows.",
+        "A look inside the lab and cleanroom, featuring hands-on recovery work and interview footage with data recovery engineers and client-facing staff, with yours truly making an appearance as part of the team. Included here as a grounded view of the people, environment, and day-to-day work behind professional recovery operations.",
       youtubeUrl: "https://www.youtube.com/watch?v=j01yFpDAQk8",
       embedId: "j01yFpDAQk8",
     },

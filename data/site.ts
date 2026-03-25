@@ -248,6 +248,13 @@ export const siteContent = {
       imageAlt: "Microscope view of PMIC rework on Apple device board",
     },
     {
+      title: "Contamination and Water Damage Remediation",
+      description:
+        "Board remediation of damaged SMD and BGA components after contaminant exposure in an ISO 1000 lab, using micro-soldering and BGA rework to clear shorts and restore damaged traces to a functional state.",
+      image: withBasePath("/portfolio-assets/lab/waterdamage.jpg"),
+      imageAlt: "Water-damaged logic board undergoing board-level remediation and rework",
+    },
+    {
       title: "DC Power Injection",
       description:
         "Board-level troubleshooting using direct power injection to isolate fault behavior and confirm whether a device is viable for deeper recovery work.",

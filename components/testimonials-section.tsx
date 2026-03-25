@@ -14,7 +14,7 @@ export function TestimonialsSection({ items }: TestimonialsSectionProps) {
       title="Professional endorsements"
       compactTop
     >
-      <div className="max-w-7xl grid gap-8 border-t border-white/10 pt-8 lg:grid-cols-2 lg:gap-10">
+      <div className="grid gap-8 border-t border-white/10 pt-8 lg:grid-cols-2 lg:gap-10">
         {items.map((item) => (
           <article key={item.author} className="border-b border-white/10 pb-8">
             <blockquote className="text-[1.02rem] leading-8 text-[color:var(--color-text-muted)]">

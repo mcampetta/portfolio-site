@@ -20,7 +20,7 @@ export function ExperienceSection({ items }: ExperienceSectionProps) {
       title="Experience summary"
       copy="A short view of the environments and responsibilities behind the work shown above."
     >
-      <div className="max-w-7xl border-t border-white/10">
+      <div className="border-t border-white/10">
         {items.map((item) => (
           <article key={`${item.company}-${item.role}`} className="grid gap-6 border-b border-white/10 py-10 lg:grid-cols-[minmax(220px,0.45fr)_minmax(0,1.55fr)] lg:gap-10">
             <div className="space-y-3">

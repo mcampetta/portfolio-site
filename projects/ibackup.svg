@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#101720"/>
+  <rect x="84" y="72" width="1032" height="531" rx="28" fill="#0D141D" stroke="rgba(171,186,205,0.18)"/>
+  <rect x="132" y="132" width="468" height="360" rx="18" fill="#131F2A"/>
+  <rect x="642" y="132" width="426" height="52" rx="12" fill="#15212D"/>
+  <rect x="642" y="208" width="426" height="52" rx="12" fill="#15212D"/>
+  <rect x="642" y="284" width="426" height="52" rx="12" fill="#15212D"/>
+  <rect x="642" y="360" width="426" height="52" rx="12" fill="#15212D"/>
+  <path d="M184 238H548" stroke="#7BD1C3" stroke-width="18" stroke-linecap="round"/>
+  <path d="M184 292H492" stroke="#AAB7C7" stroke-width="14" stroke-linecap="round"/>
+  <path d="M184 338H446" stroke="#AAB7C7" stroke-width="14" stroke-linecap="round"/>
+  <text x="132" y="560" fill="#ECF2F8" font-family="Arial, sans-serif" font-size="42" font-weight="700">iBackup</text>
+  <text x="132" y="598" fill="#AAB7C7" font-family="Arial, sans-serif" font-size="24">iOS data recovery software</text>
+</svg>
